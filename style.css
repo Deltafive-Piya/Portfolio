@@ -66,6 +66,7 @@ body {
         margin-top: 40px;
         max-height: 300px;
         width: auto;
+        opacity: 0.3;
     }
 
 .subscription-section {
