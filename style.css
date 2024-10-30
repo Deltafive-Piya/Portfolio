@@ -1,133 +1,148 @@
 * {
-    /* outline: 1px dotted red; */
+	/* outline: 1px dotted red; */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 40px;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
 }
 .nav-left img {
-    max-width: 80px;
-    max-height: auto;
+	max-width: 80px;
+	max-height: auto;
 }
 .nav-links {
-    display:flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 nav > div > a {
-    text-decoration: none; /* Remove the underline */
-    color: rgb(255, 255, 255);
-    margin: 0 6px;
-    padding: 4px 4px;
+	text-decoration: none; /* Remove the underline */
+	color: rgb(255, 255, 255);
+	margin: 0 6px;
+	padding: 4px 4px;
 }
 nav > div img {
-    max-width: 50px;
-    max-height: auto;
-    margin: 0 6px;
-    padding: 4px 4px;
+	max-width: 50px;
+	max-height: auto;
+	margin: 0 6px;
+	padding: 4px 4px;
 }
 
 body {
-    font-family: monospace;
-    background-color: rgb(51, 51, 51);
-    color: white;                           /*? Font Color for Page */
+	font-family: monospace;
+	background-color: rgb(51, 51, 51);
+	color: white; /*? Font Color for Page */
 }
 
 .container {
-    display: flex;
-    max-width:100%;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-
+	display: flex;
+	max-width: 100%;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
 }
 .introduction-divider {
-    /* background-color: rgb(11, 83, 192); */
-    border-radius: 10px;
+	/* background-color: rgb(11, 83, 192); */
+	border-radius: 10px;
 }
 
 .introduction-section {
-    width: 97.5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(29, 29, 29);
-    border-radius: 30px;
+	width: 97.5vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(29, 29, 29);
+	border-radius: 30px;
 }
 
-    .introduction-section > img {
-        margin-top: 40px;
-        max-height: 300px;
-        width: auto;
-        opacity: 0.3;
-    }
+.introduction-section > img {
+	margin-top: 40px;
+	max-height: 300px;
+	width: auto;
+	opacity: 0.3;
+}
 
 .subscription-section {
-    background-color: rgb(32, 32, 7);
+	background-color: rgb(32, 32, 7);
 }
 
 .projects-section {
-    width: 98%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(41, 41, 41);
-    padding: 10px 10px;
-    border-radius: 30px;
+	width: 98%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(41, 41, 41);
+	padding: 10px 10px;
+	border-radius: 30px;
 }
 
 .project-entry {
-    margin-bottom: 3px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px rgb(0, 0, 0) solid;
-    border-radius: 10px;
-    padding: 15px 10px;
+	margin-bottom: 3px;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px rgb(0, 0, 0) solid;
+	border-radius: 10px;
+	padding: 15px 10px;
 }
-    .project-img-container > img {
-        overflow: hidden;
-        max-width:400px;
-        height: auto;
-    }
-    
-    .blur-image:hover {
-        filter: blur(5px); /* Adjust the blur intensity as needed */
-    }
+.project-img-container > img {
+	overflow: hidden;
+	max-width: 400px;
+	height: auto;
+}
+
+.blur-image:hover {
+	filter: blur(5px); /* Adjust the blur intensity as needed */
+}
 
 /* Initial style for the clear image */
 .project-entry .project-tool {
-    display: flex;
-    position: absolute;
-    top: 50%; /* Vertically center relative to the parent container */
-    left: 0;
-    transform: translateY(-50%); /* halfway align vertically */
-    z-index: 2;
-    max-width: 100%;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.6s;
+	display: flex;
+	position: absolute;
+	top: 50%; /* Vertically center relative to the parent container */
+	left: 0;
+	transform: translateY(-50%); /* halfway align vertically */
+	z-index: 2;
+	max-width: 100%;
+	height: auto;
+	opacity: 0;
+	transition: opacity 0.6s;
 }
 
 /* Position the clear image relative to its container */
 .project-entry .project-img-container {
-    position: relative;
+	position: relative;
 }
 
 /* Apply blur effect on hover */
 .project-entry:hover .blur-image {
-    filter: blur(5px); /* Adjust the blur intensity as needed */
+	filter: blur(5px); /* Adjust the blur intensity as needed */
 }
 
 /* Show clear image on hover */
 .project-entry:hover .project-tool {
-    opacity: 1; /* Show the clear image on hover by changing opacity */
+	opacity: 1; /* Show the clear image on hover by changing opacity */
+}
+/* Footer Alignment */
+.subscription-section {
+	background-color: rgb(32, 32, 7);
+	text-align: center; /* Center-align the text */
+	padding: 10px; /* Add padding for better spacing */
+}
+
+/* Override visited link color */
+a,
+a:visited {
+	color: white; /* Set to your desired color */
+	text-decoration: none; /* Ensure no underline */
+}
+
+a:hover {
+	color: lightgray; /* Optional: change color on hover */
 }
